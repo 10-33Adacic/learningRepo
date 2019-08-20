@@ -5,17 +5,18 @@ package com.learning.controller;
  */
 
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class PagesController {
 
-    @RequestMapping("/api")
+    @RequestMapping("/logform")
     public String mainPage(){
         return "index.html";
     }
 
-    @RequestMapping("/form")
+    @RequestMapping("/regform")
     public String regForm(){
         return "reg_form";
     }

@@ -11,7 +11,7 @@
 </head>
 <body ng-app="registration_form" ng-controller="AppCtrl">
 <div class="col-md-8 col-md-offset-2">
-    <h1>Registration form's Main</h1>
+    <h1>Registration form</h1>
 </div>
 <div class="container" style="margin-top: 60px">
     <div class="row">
