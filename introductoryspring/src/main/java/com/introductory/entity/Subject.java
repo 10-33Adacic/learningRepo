@@ -1,7 +1,22 @@
 package com.introductory.entity;
 
-public enum Subject {
-    MATHS, PHYSICS, ENGLISH, UKRAINIAN, COMPUTER_SCIENCE;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-    public int grade;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@NoArgsConstructor
+@Setter
+@Getter
+@Entity
+public class Subject {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    private Integer id;
+    private String subject;
+    private Integer grade;
 }

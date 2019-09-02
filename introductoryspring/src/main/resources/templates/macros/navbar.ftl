@@ -31,6 +31,6 @@
         <@spring.message "lang.eng"/>
         </a>
         </div>
-    <@l.logout />
+        <@l.logout />
     </div>
 </nav>
